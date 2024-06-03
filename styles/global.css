@@ -1,0 +1,144 @@
+@font-face {
+  font-family: 'Comfortaa';
+  src: local('Comfortaa'), url('../fonts/comfortaa.woff2') format('woff2'),
+    url('../fonts/comfortaa.woff') format('woff');
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'HelveticaNeueCyr';
+  src: local('HelveticaNeueCyr Light'), local('HelveticaNeueCyr-Light'),
+    url('../fonts/helveticaneuecyr-light.woff2') format('woff2'),
+    url('../fonts/helveticaneuecyr-light.woff') format('woff');
+  font-weight: 300;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'HelveticaNeueCyr';
+  src: local('HelveticaNeueCyr Medium'), local('HelveticaNeueCyr-Medium'),
+    url('../fonts/helveticaneuecyr-medium.woff2') format('woff2'),
+    url('../fonts/helveticaneuecyr-medium.woff') format('woff');
+  font-weight: 550;
+  font-display: swap;
+}
+
+html {
+  box-sizing: border-box;
+  position: relative;
+}
+
+* {
+  box-sizing: inherit;
+}
+
+body {
+  min-width: 320px;
+  min-height: 100vh;
+  font-family: HelveticaNeueCyr, Arial, sans-serif;
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 300;
+  color: var(--color-text-main);
+  background-color: var(--color-text-dark);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+button {
+  cursor: pointer;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+h1,
+h2,
+h3,
+p,
+figure,
+fieldset {
+  margin: 0;
+}
+
+fieldset {
+  border: none;
+  padding: 0;
+}
+
+h2 {
+  font-family: Comfortaa, Arial, sans-serif;
+  font-weight: 400;
+}
+
+h3 {
+  font-family: HelveticaNeueCyr, Arial, sans-serif;
+  font-weight: 550;
+}
+
+p,
+a {
+  font-family: HelveticaNeueCyr, Arial, sans-serif;
+  font-weight: 300;
+}
+
+section {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+input:focus,
+button:focus,
+a:focus,
+select:focus {
+  outline: none;
+}
+
+.visually-hidden {
+  position: absolute;
+  clip: rect(1px 1px 1px 1px);
+  /* IE6, IE7 */
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0;
+  border: 0;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+}
+
+.container {
+  position: relative;
+  width: 1210px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+@media (max-width: 1024px) {
+  .container {
+    width: 880px;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    width: 700px;
+  }
+}
+
+@media (max-width: 320px) {
+  .container {
+    width: 270px;
+  }
+}
