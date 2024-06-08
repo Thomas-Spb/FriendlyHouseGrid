@@ -270,7 +270,7 @@
   }
 
   .projects__wrapper {
-    grid-template-columns: 400px 220px;
+    grid-template-columns: 2fr 1fr;
     column-gap: 80px;
   }
 

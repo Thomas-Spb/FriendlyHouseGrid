@@ -120,19 +120,21 @@ select:focus {
 
 .container {
   position: relative;
-  width: 1180px;
+  width: 1240px;
   margin: 0 auto;
+  padding: 0 30px;
 }
 
 @media (max-width: 1024px) {
   .container {
-    width: 880px;
+    width: 940px;
   }
 }
 
 @media (max-width: 768px) {
   .container {
-    width: 700px;
+    width: 720px;
+    padding: 0 10px;
   }
 }
 
